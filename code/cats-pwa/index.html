@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Progressive Web Cats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/icons/apple-touch-icon-180x180.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+    </nav>
+    <div class="image-container"></div>
+    <script>
+      navigator.serviceWorker
+        .register('service-worker.js')
+        .then(() => {
+          console.log('succesfully registered service worker!')
+        })
+        .catch(() => {
+          console.log('failed to register service worker')
+        })
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
