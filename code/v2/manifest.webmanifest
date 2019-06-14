@@ -1,0 +1,21 @@
+{
+  "name": "Progressive Web Cats",
+  "short_name": "PWC",
+  "description": "Random cat pictures",
+  "display": "standalone",
+  "theme_color": "#fafafa",
+  "background_color": "#fff",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
